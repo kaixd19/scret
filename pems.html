@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession for My Crush</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .confession-box {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 300px;
+            position: relative;
+        }
+        h2 {
+            color: #e63946;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            margin: 15px 0;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #e63946;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #d62839;
+        }
+        .links {
+            margin-top: 10px;
+        }
+        a {
+            color: #e63946;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .heart {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: #e63946;
+        }
+        .message {
+            display: none;
+            color: #e63946;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="confession-box">
+    <h2>Confession Time!</h2>
+    <div class="button-container">
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    <div class="message" id="noMessage">You can't say no!</div>
+    <div class="links">
+        <p><a href="https://www.facebook.com/charissepem.talisic" target="_blank">Click this and you will see a pretty face</a></p>
+        <p><a href="https://youtu.be/KTsuBfEw8Zo?si=XTCDMdfEj9nAfR4y" target="_blank">Listen to this hehe</a></p>
+    </div>
+</div>
+
+<script>
+    const noButton = document.getElementById('noButton');
+    const noMessage = document.getElementById('noMessage');
+
+    noButton.addEventListener('click', function() {
+        noMessage.style.display = 'block';
+    });
+
+    document.getElementById('yesButton').addEventListener('click', function() {
+        alert("Listen to the song");
+    });
+
+</body>
+</html>
